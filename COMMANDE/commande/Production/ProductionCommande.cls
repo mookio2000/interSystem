@@ -16,6 +16,10 @@ XData ProductionDefinition
   </Item>
   <Item Name="ServiceVoiture" Category="" ClassName="commande.BS.ServiceVoiture" PoolSize="0" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
+  <Item Name="ServiceFichierSinistreReservation" Category="" ClassName="commande.BS.ServiceFichierSinistreReservation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Adapter" Name="ArchivePath"></Setting>
+    <Setting Target="Adapter" Name="FilePath">/flow/reservation</Setting>
+  </Item>
 </Production>
 }
 

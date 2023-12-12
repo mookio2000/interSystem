@@ -21,6 +21,15 @@ XData BPL [ XMLNamespace = "http://www.intersystems.com/bpl" ]
 <assign property="response" value="callresponse" action="set" />
 </response>
 </call>
+<call name='envoie fichier sinistre' target='fileReservation' async='0' xpos='734' ypos='328' >
+<request type='reservation.msg.pushSinistreFileDmde' >
+<assign property="callrequest.plaque" value="request.plaque" action="set" />
+<assign property="callrequest.sinistre.codeSinistre" value="request.sinistre.codeSinistre" action="set" />
+<assign property="callrequest.sinistre.libelleSinistre" value="request.sinistre.libelleSinistre" action="set" />
+<assign property="callrequest.sinistre.detailSinistre" value="request.sinistre.detailSinistre" action="set" />
+</request>
+<response type='reservation.msg.pushSinistreFileRpse' />
+</call>
 </sequence>
 </process>
 }

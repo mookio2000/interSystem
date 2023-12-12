@@ -15,6 +15,9 @@ XData ProductionDefinition
   </Item>
   <Item Name="Sinistre" Category="" ClassName="reservation.BO.Sinistre" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
+  <Item Name="fileReservation" Category="" ClassName="reservation.BO.File" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Adapter" Name="FilePath">/flow/reservation</Setting>
+  </Item>
 </Production>
 }
 
